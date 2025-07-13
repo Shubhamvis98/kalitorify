@@ -42,34 +42,6 @@ For more information about the Transparent Proxy through Tor please read the [To
 
 ---
 
-## Install
-
-### Download:
-
-Download with `git`:
-
-```term
-git clone https://github.com/brainfucksec/kalitorify
-```
-
-### Install dependencies:
-
-```term
-sudo apt-get update && sudo apt-get dist-upgrade -y
-
-sudo apt-get install -y tor curl
-```
-
-### Install kalitorify:
-
-```term
-cd kalitorify/
-
-sudo make install
-```
-
----
-
 ## Usage
 
 **Before starting kalitorify:**
@@ -123,28 +95,6 @@ kalitorify --clearnet
 **-v, --version**
 
     display program version and exit
-
----
-
-## Uninstall
-
-For uninstall kalitorify use `make uninstall` command inside the program git folder:
-
-
-```term
-cd kalitorify/
-
-sudo make uninstall
-```
-
-Note: If you have deleted the git folder after installation, you can remove the program manually:
-
-```term
-sudo rm -ri /usr/bin/kalitorify \
-/usr/share/kalitorify \
-/usr/share/doc/kalitorify \
-/var/lib/kalitorify
-```
 
 ---
 
